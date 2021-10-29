@@ -1,0 +1,11 @@
+version: "3"
+services:
+    proxy:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                PORT: 10000
+        ports:
+            - "10000:10000"
+        restart: "no"
